@@ -1,0 +1,12 @@
+{
+  "name": "PxMatrix Christmas Icons",
+  "keywords": "arduino, esp8266, led display, pxmatrix",
+  "description": "ESP library for PxMatrix displays which contains a number of Christmas Icons.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/yknivag/PxMatrixChristmasIcons"
+  },
+  "frameworks": "arduino",
+  "platforms": "ESP8266, ESP32, esp8266, esp32"
+}
