@@ -11,6 +11,10 @@ ChristmasIcons::ChristmasIcons(PxMATRIX* display) {
 }
 
 void ChristmasIcons::drawIcon(int x, int y, const uint16_t image[]) {
+
+  uint16_t * buffer = new uint16_t[2048];
+  memcpy_P(buffer, image, 2048);
+
   int imageWidth = ICON_HEIGHT;
   int imageHeight = ICON_WIDTH;
   int counter = 0;
@@ -18,9 +22,11 @@ void ChristmasIcons::drawIcon(int x, int y, const uint16_t image[]) {
   {
     for (int xx = 0; xx < imageWidth; xx++)
     {
-      _display->drawPixel(xx + x , yy + y, image[counter]);
+      _display->drawPixel(xx + x , yy + y, buffer[counter]);
+//    _display->drawPixel(xx + x , yy + y, image[counter]);
       counter++;
     }
   }
+  free(buffer);
 }
 
