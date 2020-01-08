@@ -38,7 +38,7 @@ The constructor takes a pointer to the PxMatrix display object.
 
 eg *ChristmasIcons ChristmasIcons(&display);*
 
-### heartbeat()
+### drawIcon()
 
 *void drawIcon(int x = 0, int y = 0, const uint16_t image[]);*
 
